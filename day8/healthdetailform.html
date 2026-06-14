@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Health Details Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" required placeholder="Enter your name" name="fname">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="DOB">
+            <br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option disabled selected> Select your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="other">other</option>
+            </select>
+            <br><br>
+
+            <label for="contact">Phone Number :</label>
+            <input type="tel" id="contact" >
+
+        </fieldset>
+        <fieldset>
+            <legend>Medical History</legend>
+            <label for="group">Blood Group:</label>
+            <select id="group" name="Blood Group">
+                <option value="A+">A+</option>
+                <option value="B-">B-</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="ABC">ABC</option>
+            </select>
+
+            <br><br>
+
+
+            <label>Do you wear glasses or contact lenses ?</label>
+            <br><br>
+
+            <input type="radio" id="yes" name="glass">
+            <label for="yes" value="Yes">Yes</label>
+            <br>
+            <input type="radio" id="no" name="glass">
+            <label for="no" value="No">No</label>
+            <br><br>
+
+            <label for="condition">Pre Existing Conditions:</label>
+            <br>
+            <textarea id="condition" name="PreExisting Condition" rows="10" cols="50" placeholder="List Any pre-existing medical conditions"></textarea>
+
+            <br><br>
+            <label>Allergies:</label>
+            <br><br>
+            <input type="checkbox" id="pollen" value="Pollen" name="Allergies">
+            <label for="pollen" >Pollen</label>
+            <br>
+            <input type="checkbox" id="peanuts" value="peanuts" name="Allergies">
+            <label for="peanuts" >Peanuts</label>
+            <br>
+            <input type="checkbox" id="Latex" value="Latex" name="Allergies">
+            <label for="Latex" >Latex</label>
+            <br>
+            <input type="checkbox" id="none" value="none" name="Allergies">
+            <label for="none" >None</label>
+            <br><br>
+            <label for="currentmedication">Current Medications:</label>
+            <br>
+            <textarea id="currentmedication" name="currentmedication" rows="7" cols="40" placeholder="List any current medications"></textarea>
+
+            <br><br>
+
+
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Emergency Contact</legend>
+
+            <label for="Emergencycontactname">Emergency Contact Name:</label>
+            <input id="Emergencycontactname" type="text" name="Emergency Contact Name">
+
+            <br><br>
+            <label for="Emergencycontactphone">Emergency Contact Phone:</label>
+            <input id="Emergencycontactphone" type="tel" name="Emergencycontactphone">
+            <br><br>
+
+            <label for="relation"> Relationship to Emergency Contact:</label>
+            <input id="relation" type="text" name="Relationship to Emergency Contact">
+            <br><br>
+
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
+
+<!-- DOB=1990-03-04&gender=Male&Blood+Group=B%2B&glass=on&PreExisting+Condition=no+&Allergies=Pollen&Allergies=peanuts&currentmedication=no+medication&Emergency+Contact+Name=seefat&Emergencycontactphone=22112345473&Relationship+to+Emergency+Contact=daughter -->
